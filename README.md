@@ -1,30 +1,33 @@
-# 🧠 Recomendador de Produtos RD Station
+🧠 Recomendador de Produtos — RD Station
 
-Aplicação frontend desenvolvida como **desafio técnico**, com o objetivo de recomendar produtos da RD Station com base nas preferências e funcionalidades selecionadas pelo usuário.
+Aplicação frontend desenvolvida como desafio técnico, com o objetivo de recomendar produtos da RD Station com base nas preferências e funcionalidades selecionadas pelo usuário.
 
-O foco principal do projeto está na **lógica de recomendação**, **organização de código**, **testabilidade** e **clareza arquitetural**, conforme especificado no desafio.
+O projeto tem como foco principal a lógica de recomendação, organização de código, testabilidade e clareza arquitetural, conforme os critérios definidos no desafio.
 
----
+🚀 Funcionalidades
 
-## 🚀 Funcionalidades
+Seleção de preferências e funcionalidades por meio de formulário
 
-- Seleção de preferências e funcionalidades via formulário
-- Cálculo de recomendações com base em score
-- Dois modos de recomendação:
-  - **SingleProduct**: retorna apenas um produto
-  - **MultipleProducts**: retorna uma lista de produtos
-- Regra de desempate: em caso de empate, o **último produto válido** é retornado
-- Possibilidade de limpar as seleções
-- Interface responsiva com **tema claro e escuro**
-- Animação sutil na entrada da aplicação para melhorar a percepção de carregamento
+Cálculo de recomendações baseado em score
 
----
+Dois modos de recomendação:
 
-## 🧩 Arquitetura e Organização
+SingleProduct: retorna apenas um produto
 
-O projeto foi estruturado com separação de responsabilidades:
+MultipleProducts: retorna uma lista de produtos
 
-```txt
+Regra de desempate: em caso de empate, o último produto válido é retornado
+
+Opção para limpar todas as seleções
+
+Interface responsiva com tema claro e escuro
+
+Animação sutil de entrada para melhorar a percepção de carregamento da aplicação
+
+🧩 Arquitetura e Organização
+
+O projeto foi estruturado com foco em separação de responsabilidades:
+
 src/
 ├─ components/      # Componentes de UI
 ├─ hooks/           # Hooks customizados
@@ -32,15 +35,15 @@ src/
 ├─ mocks/           # Dados mockados para testes
 ├─ __tests__/       # Testes unitários e de integração
 
-🔹 Destaques
+🔹 Destaques da Arquitetura
 
 Regra de negócio isolada no recommendation.service
 
-Serviços independentes de React, facilitando testes
+Serviços independentes do React, facilitando testes unitários
 
-Componentes focados em UI, evitando lógica desnecessária
+Componentes focados exclusivamente em UI, evitando lógica desnecessária
 
-Hooks utilizados para organização do estado e efeitos colaterais
+Uso de hooks para melhor organização de estado e efeitos colaterais
 
 🧪 Testes
 
@@ -54,13 +57,13 @@ Modo SingleProduct
 
 Modo MultipleProducts
 
-Critério de desempate
+Regra de desempate
 
 Diferentes combinações de preferências e funcionalidades
 
 ✅ Teste de Integração (extra)
 
-Foi adicionado um teste de integração para validar o fluxo principal do usuário:
+Adicionado para validar o fluxo principal do usuário:
 
 Seleção de preferências
 
@@ -68,7 +71,7 @@ Submissão do formulário
 
 Exibição das recomendações
 
-Nesse teste, o hook de dados (useProducts) é mockado para isolar dependências externas.
+Neste teste, o hook de dados (useProducts) é mockado para isolar dependências externas.
 
 ▶️ Executar os testes
 yarn test
@@ -79,7 +82,7 @@ React
 
 JavaScript (ES6+)
 
-Hooks (useState, useEffect)
+React Hooks (useState, useEffect)
 
 Tailwind CSS
 
@@ -91,17 +94,17 @@ Axios
 
 🎨 UI / UX
 
-Layout limpo e responsivo
+Layout limpo e totalmente responsivo
 
-Tema claro e escuro
+Suporte a tema claro e escuro
 
-Cores inspiradas na identidade visual da RD Station
+Paleta de cores inspirada na identidade visual da RD Station
 
 Header com efeito sutil de transparência
 
-Componentização focada em legibilidade e manutenção
+Componentização focada em legibilidade, manutenção e escala
 
-▶️ Como executar o projeto
+▶️ Como Executar o Projeto
 Instalar dependências
 yarn install
 
@@ -115,18 +118,17 @@ yarn test
 
 O desenvolvimento priorizou:
 
-Clareza de código
+Clareza e legibilidade do código
 
-Foco na regra de negócio central
+Foco na regra de negócio principal
 
-Organização e extensibilidade
+Boa organização do projeto e facilidade de extensão
 
-Boa experiência do usuário sem overengineering
+Experiência do usuário sem overengineering
 
-Melhorias adicionais poderiam incluir novos cenários de teste ou refinamentos visuais, caso houvesse mais tempo, mantendo a solução alinhada aos critérios do desafio.
+Como melhorias futuras, poderiam ser adicionados novos cenários de teste ou refinamentos visuais, mantendo a solução alinhada aos objetivos do desafio.
 
 👩‍💻 Autora
 
 Feito com ❤️ por Beatriz Gomes
 2025
-```
