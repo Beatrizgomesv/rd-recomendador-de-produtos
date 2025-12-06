@@ -128,7 +128,6 @@ Como melhorias futuras, poderiam ser incluídos novos cenários de teste ou refi
 
 ---
 
-## 👩‍💻 Autora
+## 👩‍💻 Feito com ❤️ por Beatriz Gomes  
 
-Feito com ❤️ por Beatriz Gomes  
-2025
+
