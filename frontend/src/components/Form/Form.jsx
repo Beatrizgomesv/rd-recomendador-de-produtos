@@ -1,6 +1,6 @@
 // Form.jsx
 import React from "react";
-import { Preferences, Features, RecommendationType } from "./Fields";
+import { Preferences, Features } from "./Fields";
 import { SubmitButton } from "./SubmitButton";
 
 import useProducts from "../../hooks/useProducts";
@@ -29,14 +29,6 @@ export default function Form({ setRecommendations }) {
       className="max-w-md mx-auto p-4 bg-white dark:bg-rd-surfaceDark rounded-lg shadow-md"
       onSubmit={(e) => handleSubmit(e, onSubmit)}
     >
-      <Preferences
-        preferences={preferences}
-        selectedPreferences={formData.selectedPreferences}
-        onPreferenceChange={(selected) =>
-          handleChange("selectedPreferences", selected)
-        }
-      />
-
       <Preferences
         preferences={preferences}
         selectedPreferences={formData.selectedPreferences}
