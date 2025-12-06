@@ -4,7 +4,7 @@ export default function Checkbox({ children, ...props }) {
   return (
     <label className="flex items-center gap-2 cursor-pointer">
       <input
-        {...props}                // ✅ type vem de fora
+        {...props}
         className="
           h-4 w-4
           accent-rd-blue

@@ -1,4 +1,3 @@
-// tailwind.config.js
 module.exports = {
   darkMode: 'class',
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -15,8 +14,8 @@ module.exports = {
           surfaceLight: '#FFFFFF',
           border: '#E1E5EA',
 
-          bgDark: '#0F1115', // estilo ChatGPT
-          surfaceDark: '#111827', // cards
+          bgDark: '#0F1115',
+          surfaceDark: '#111827',
           textDark: '#F9FAFB',
           textDarkSecondary: '#D1D5DB',
           borderDark: '#374151',
@@ -26,7 +25,7 @@ module.exports = {
       backgroundImage: {
         'rd-light-gradient':
           'linear-gradient(to bottom, #00cde0, #53ccdf, #76cbdd, #90cad9, #a6c9d4)',
-        // 🌙 DARK MODE GRADIENT — ELEGANTE + AZUL PROFUNDO
+
         'rd-dark-gradient':
           'linear-gradient(to bottom, #0a2539, #122b3a, #1c303b, #26353c, #303a3d)',
       },
