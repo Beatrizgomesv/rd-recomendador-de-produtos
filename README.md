@@ -1,39 +1,36 @@
-🧠 Recomendador de Produtos RD Station
+# 🧠 Recomendador de Produtos RD Station
 
-Aplicação frontend desenvolvida como desafio técnico, com o objetivo de recomendar produtos da RD Station com base nas preferências e funcionalidades selecionadas pelo usuário.
+Aplicação frontend desenvolvida como **desafio técnico**, com o objetivo de recomendar produtos da RD Station com base nas preferências e funcionalidades selecionadas pelo usuário.
 
-O foco principal do projeto está na lógica de recomendação, organização de código, testabilidade e clareza arquitetural, conforme especificado no desafio.
+O foco principal do projeto está na **lógica de recomendação**, **organização de código**, **testabilidade** e **clareza arquitetural**, conforme especificado no desafio.
 
-🚀 Funcionalidades
+---
 
-Seleção de preferências e funcionalidades via formulário
+## 🚀 Funcionalidades
 
-Cálculo de recomendações com base em score
+- Seleção de preferências e funcionalidades via formulário
+- Cálculo de recomendações com base em score
+- Dois modos de recomendação:
+  - **SingleProduct**: retorna apenas um produto
+  - **MultipleProducts**: retorna uma lista de produtos
+- Regra de desempate: em caso de empate, o **último produto válido** é retornado
+- Possibilidade de limpar as seleções
+- Interface responsiva com **tema claro e escuro**
+- Animação sutil na entrada da aplicação para melhorar a percepção de carregamento
 
-Dois modos de recomendação:
+---
 
-SingleProduct: retorna apenas um produto
-
-MultipleProducts: retorna uma lista de produtos
-
-Regra de desempate: em caso de empate, o último produto válido é retornado
-
-Possibilidade de limpar as seleções
-
-Interface responsiva com tema claro e escuro
-
-Animação sutil na entrada da aplicação para melhorar a percepção de carregamento
-
-🧩 Arquitetura e Organização
+## 🧩 Arquitetura e Organização
 
 O projeto foi estruturado com separação de responsabilidades:
 
+```txt
 src/
-├─ components/ # Componentes de UI
-├─ hooks/ # Hooks customizados
-├─ services/ # Regras de negócio e acesso a dados
-├─ mocks/ # Dados mockados para testes
-├─ **tests**/ # Testes unitários e de integração
+├─ components/      # Componentes de UI
+├─ hooks/           # Hooks customizados
+├─ services/        # Regras de negócio e acesso a dados
+├─ mocks/           # Dados mockados para testes
+├─ __tests__/       # Testes unitários e de integração
 
 🔹 Destaques
 
@@ -73,8 +70,7 @@ Exibição das recomendações
 
 Nesse teste, o hook de dados (useProducts) é mockado para isolar dependências externas.
 
-Para executar os testes:
-
+▶️ Executar os testes
 yarn test
 
 🛠️ Tecnologias Utilizadas
@@ -106,17 +102,13 @@ Header com efeito sutil de transparência
 Componentização focada em legibilidade e manutenção
 
 ▶️ Como executar o projeto
-
-Instale as dependências:
-
+Instalar dependências
 yarn install
 
-Inicie a aplicação:
-
+Iniciar a aplicação
 yarn start
 
-Execute os testes:
-
+Executar os testes
 yarn test
 
 📌 Considerações Finais
@@ -137,3 +129,4 @@ Melhorias adicionais poderiam incluir novos cenários de teste ou refinamentos v
 
 Feito com ❤️ por Beatriz Gomes
 2025
+```
