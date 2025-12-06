@@ -1,4 +1,3 @@
-// Form.jsx
 import React from "react";
 import { Preferences, Features } from "./Fields";
 import { SubmitButton } from "./SubmitButton";
